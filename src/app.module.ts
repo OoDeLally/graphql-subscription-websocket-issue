@@ -10,6 +10,7 @@ import { AppResolver } from './app.resolver';
       driver: ApolloDriver,
       installSubscriptionHandlers: true,
       autoSchemaFile: join(process.cwd(), './dist/schema.gql'),
+      playground: true,
     }),
   ],
   providers: [AppResolver],
