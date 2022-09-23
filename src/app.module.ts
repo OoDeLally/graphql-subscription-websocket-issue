@@ -7,10 +7,12 @@ import { AppResolver } from './app.resolver';
 @Module({
   imports: [
     GraphQLModule.forRoot<ApolloDriverConfig>({
+      path: 'graphql',
       driver: ApolloDriver,
       installSubscriptionHandlers: true,
       autoSchemaFile: join(process.cwd(), './dist/schema.gql'),
       playground: true,
+      debug: true,
     }),
   ],
   providers: [AppResolver],
