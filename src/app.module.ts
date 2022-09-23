@@ -12,6 +12,7 @@ import { AppResolver } from './app.resolver';
       installSubscriptionHandlers: true,
       autoSchemaFile: join(process.cwd(), './dist/schema.gql'),
       playground: true,
+      introspection: true,
       debug: true,
     }),
   ],
